@@ -6,14 +6,14 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 
-class EventPage : AppCompatActivity() {
+class CreateNewEvent : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_event_page)
+        setContentView(R.layout.activity_create_new_event)
 
-        val mButton = findViewById<View>(R.id.CreateNew) as Button
+        val mButton = findViewById<View>(R.id.Newbt) as Button
         mButton.setOnClickListener {
-            startActivity((Intent(this@EventPage, CreateNewEvent::class.java)))
+            startActivity((Intent(this@CreateNewEvent, EventPage::class.java)))
         }
     }
 }
