@@ -1,35 +1,54 @@
-<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
-
-    <PreferenceCategory app:title="@string/messages_header">
-
-        <EditTextPreference
-            app:key="signature"
-            app:title="@string/signature_title"
-            app:useSimpleSummaryProvider="true" />
-
-        <ListPreference
-            app:defaultValue="reply"
-            app:entries="@array/reply_entries"
-            app:entryValues="@array/reply_values"
-            app:key="reply"
-            app:title="@string/reply_title"
-            app:useSimpleSummaryProvider="true" />
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="App Settings">
 
     </PreferenceCategory>
-
-    <PreferenceCategory app:title="@string/sync_header">
-
-        <SwitchPreferenceCompat
-            app:key="sync"
-            app:title="@string/sync_title" />
-
-        <SwitchPreferenceCompat
-            app:dependency="sync"
-            app:key="attachment"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
-            app:title="@string/attachment_title" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_preference_Notify"
+        android:summary="App Notifications Can Be Turned On or Off"
+        android:title="Enable Notifications" />
+    <ListPreference
+        android:defaultValue="1"
+        android:summary="%s"
+        android:entries="@array/Languages"
+        android:entryValues="@array/Languages"
+        android:key="LanguagePref"
+        android:title="Language"
+    />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_preference_sound"
+        android:title="Sound" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_preference_vb"
+        android:title="Vibration" />
+    <ListPreference
+        android:defaultValue="1"
+        android:summary="%s"
+        android:entries="@array/TimeZones"
+        android:entryValues="@array/TimeZones"
+        android:key="list_preference_timezones"
+        android:title="Time Zone" />
+    <PreferenceCategory android:title="About">
+        <Preference
+            android:key="Text_View"
+            android:selectable="false"
+            android:persistent="false"
+            android:title=" "
+            android:summary="Remember Me is an application that allows you to create important events in your daily life and notify you of them when they are supposed to happen"/>
 
     </PreferenceCategory>
+    <PreferenceCategory android:title="Help And Support">
+
+    </PreferenceCategory>
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="edit_text_preference_sendfeedback"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary="Give Us Some Feedback Of Your Experience Using Our App"
+        android:title="Send Feedback" />
 
 </PreferenceScreen>

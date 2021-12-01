@@ -10,17 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RememberMe">
         <activity
-            android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"></activity>
-        <activity android:name=".CreateNewEvent" />
-        <activity android:name=".EventPage" />
-        <activity android:name=".MainActivity">
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.RememberMe.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".CreateNewEvent" />
+        <activity android:name=".EventPage" />
     </application>
 
 </manifest>

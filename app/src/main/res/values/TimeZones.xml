@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TimeZones">
+        <item>Eastern Time</item>
+        <item>Pacific Time</item>
+        <item>Central Time</item>
+        <item>Central America</item>
+        <item>Hawaii</item>
+        <item>Hong Kong</item>
+        <item>London</item>
+        <item>Mexico City</item>
+        <item>Moscow</item>
+        <item>Cairo</item>
+        <item>Beijing</item>
+    </string-array>
+</resources>
