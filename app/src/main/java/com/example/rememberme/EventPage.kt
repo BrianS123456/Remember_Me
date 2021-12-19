@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import org.w3c.dom.Text
 
 class EventPage : AppCompatActivity() {
 
@@ -26,6 +27,8 @@ class EventPage : AppCompatActivity() {
 
         val textV = findViewById<TextView>(R.id.txtV)
         textV.text = "Title: "+title+"\nDate: "+date+"\nTime: " +time
+
+
 
         }
 

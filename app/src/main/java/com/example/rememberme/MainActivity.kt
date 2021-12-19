@@ -3,6 +3,7 @@ package com.example.rememberme
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.content.Intent
+import android.content.SharedPreferences
 import android.view.View
 import android.widget.Button
 import androidx.preference.PreferenceManager
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
         SButton.setOnClickListener {
             startActivity((Intent(this@MainActivity, SettingsActivity::class.java)))
         }
+
+        PreferenceManager.setDefaultValues(this,R.xml.root_preferences,false)
+
+
 
     }
 

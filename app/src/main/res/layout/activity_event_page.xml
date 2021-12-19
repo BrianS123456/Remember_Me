@@ -15,7 +15,8 @@
         android:layout_height="wrap_content"
         android:textColor="#000"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:focusableInTouchMode="true"/>
 
     <Button
         android:id="@+id/newBT"
@@ -23,14 +24,6 @@
         android:layout_height="wrap_content"
         android:text="Create New" />
 
-    <ScrollView
-        android:layout_width="411dp"
-        android:layout_height="641dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
 
 </LinearLayout>
+
